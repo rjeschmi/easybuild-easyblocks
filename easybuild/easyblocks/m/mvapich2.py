@@ -132,8 +132,7 @@ class EB_MVAPICH2(ConfigureMake):
         custom_paths = {
                         'files': ["bin/%s" % x for x in ["mpicc", "mpicxx", "mpif77",
                                                          "mpif90", "mpiexec.hydra"]] +
-                                 ["lib/lib%s" % y for x in ["fmpich", "mpichcxx", "mpichf90",
-                                                            "mpich", "mpl", "opa"]
+                                 ["lib/lib%s" % y for x in ["mpi", "mpifort", "mpicxx"]
                                                  for y in ["%s.so"%x, "%s.a"%x]],
                         'dirs': ["include"]
                        }
